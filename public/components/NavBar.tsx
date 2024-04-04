@@ -1,20 +1,26 @@
 import React from "react";
 import Button from '@mui/material/Button';
+import Image from 'next/image';
 
 export default function NavBar() {
   return (
-    <main className="flex justify-center mt-6 bg-slate-50">
-      <div className=" flex w-5/6 bg-red-400 place-content-center rounded-2xl">
-        <div className=" w-5/6 space-x-24 bg-red-600">
-          <Button>Home</Button>
-          <Button>About</Button>
-          <Button>Facility</Button>
-          <Button>Staff</Button>
-        </div>
-        <div className="flex bg-green-600">
-          <Button className="items-end">Join Now</Button>
-        </div>
+    <>
+      <div className="flex bg-green-400 justify-center">
+        <Image
+          src="/gym.png"
+          width={500}
+          height={500}
+          objectFit="fill"
+          alt="Picture of the gym"
+        />
+        <div className="absolute inset-0 flex w-5/6 h-12 rounded-2xl justify-self-center bg-amber-400">
+            <Button>Home</Button>
+            <Button>About</Button>
+            <Button>Facility</Button>
+            <Button>Staff</Button>
+            <Button>Join Now</Button>
       </div>
-    </main>
+    </div>
+    </>
   );
 }
