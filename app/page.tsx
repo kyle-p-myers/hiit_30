@@ -1,14 +1,22 @@
 "use client"
 
 
+import Header from "@/public/components/Header";
 import NavBar from "@/public/components/NavBar";
 import * as React from "react";
 
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-8">
-    <NavBar/>
-    </main>
+    <>
+      <div className="z-10">
+        <NavBar />
+      </div>
+      <div className="z-20">
+        <Header />
+      </div>
+
+    </>
+
   );
 }
