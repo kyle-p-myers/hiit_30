@@ -5,6 +5,17 @@
 :root {
  
 }
+html {
+  font-family: var(--font-comfortaa);
+}
+
+p {
+  font-family: var(--font-comfortaa);
+}
+h1 {
+  font-family: var(--font-roboto-mono);
+}
+
 
 @media (prefers-color-scheme: dark) {
   :root {
