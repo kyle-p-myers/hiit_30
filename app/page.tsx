@@ -11,6 +11,7 @@ import OfferThree from "@/public/components/OfferThree";
 
 export default function Home() {
   return (
+
     <main className="flex min-h-screen flex-col items-center justify-between p-8 bg-[#34353B]">
     <NavBar/>
     <div className="mt-[10%] text-5xl">
@@ -29,5 +30,6 @@ export default function Home() {
     </div>
    
     </main>
+
   );
 }

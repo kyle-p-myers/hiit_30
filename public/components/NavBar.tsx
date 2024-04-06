@@ -13,8 +13,16 @@ export default function NavBar() {
           <Button className="text-white">Staff</Button>
           <Button className="ml-auto mr-5 bg-lime-400 rounded-3xl w-32 text-black">Join Now</Button>
         </div>
-        </div>
-        </div>
-    
+      </div>
+      <div className="absolute inset-0 grid z-20 ml-20 mt-[30%]">
+        <h1 className="text-white text-7xl flex items-end font-semibold font-roboto">Come HIIT it with us.</h1>
+        <h1 className="text-white text-lg font-extralight flex items-start mt-5 text-wrap w-9/12 font-comfortaa">Elevate your fitness with our 
+        High Intensity Interval Training Gym, featuring 35-minute barefoot group 
+        classes tailored by certified trainers, personalized daily workouts, nutrition 
+        guidance, and cutting-edge technologies like MYZONE and InBody for a holistic fitness 
+        experience.</h1>
+      </div>
+    </div>
+ 
   );
 }
