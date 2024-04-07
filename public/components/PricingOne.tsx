@@ -1,48 +1,39 @@
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
+import * as React from "react";
+import CheckCircleIcon from "@mui/icons-material/CheckCircle";
+import { Button } from "@mui/material";
 
-const bull = (
-  <Box
-    component="span"
-    sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}
-  >
-    •
-  </Box>
-);
-
-const card = (
-  <React.Fragment>
-    <CardContent>
-      <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-        12 Punches
-      </Typography>
-      <Typography variant="h5" component="div">
-        $75 /mo
-      </Typography>
-      <Typography sx={{ mb: 1.5 }} color="text.secondary">
-        adjective
-      </Typography>
-      <Typography variant="body2">
-        well meaning and kindly.
-        <br />
-        {'"a benevolent smile"'}
-      </Typography>
-    </CardContent>
-    <CardActions>
-      <Button size="small">Learn More</Button>
-    </CardActions>
-  </React.Fragment>
-);
-
-export default function OutlinedCard() {
+export default function PricingOne() {
   return (
-    <Box sx={{ minWidth: 275 }}>
-      <Card variant="outlined">{card}</Card>
-    </Box>
+    <div className="grid grid-cols-1 grid-rows-6 m-auto gap-4">
+      <div className="row-start-1 place-content-center text-center text-5xl font-bold">
+        $75 /mo
+      </div>
+      <div className=" col-start-1 row-start-2 text-center font-light text-slate-400">
+        12 sessions per month
+      </div>
+      <div className="row-start-3 flex items-center ">
+        <div className="flex  gap-2">
+          <CheckCircleIcon />
+          Choice of any sessions we offer
+        </div>
+      </div>
+      <div className="row-start-4 flex items-center ">
+        <div className="flex  gap-2">
+          <CheckCircleIcon />
+          Free InBody Scanning
+        </div>
+      </div>
+      <div className="row-start-5 flex items-center ">
+        <div className="flex  gap-2">
+          <CheckCircleIcon />
+          Nutritional Guidance
+        </div>
+      </div>
+      <div className="row-start-6 place-content-center text-center">
+        <Button className="bg-[#ADF77F] text-black w-32 rounded-xl">
+          Join Now
+        </Button>
+      </div>
+    </div>
   );
 }
