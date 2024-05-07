@@ -7,7 +7,7 @@ import AutoGraphIcon from '@mui/icons-material/AutoGraph';
 
 export default function OfferThree() {
     return (
-      <div className="flex">
+      <div className="flex text-white">
         <div className="flex-col p-4">
           <div className="flex items-center justify-center rounded-full bg-[#2e2f32] shadow-2xl w-14 h-14">
             <AutoGraphIcon className="h-10 w-10" />
